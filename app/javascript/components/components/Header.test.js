@@ -17,6 +17,6 @@ describe("When Header renders", () => {
   it("displays NavItem in Header", () => {
     const header = shallow(<Header />);
     const headerHeading = header.find("NavItem");
-    expect(headerHeading.text()).toEqual(4);
+    expect(headerHeading.length).toEqual(4);
   });
 });
