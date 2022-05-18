@@ -36,6 +36,9 @@
   display: flex;
   justify-content: center;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .homeText {
   display: flex;
