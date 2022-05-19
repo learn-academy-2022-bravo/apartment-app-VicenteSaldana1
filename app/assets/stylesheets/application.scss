@@ -16,14 +16,15 @@
 @import "bootstrap";
 
 .footer {
-  font-weight: bold;
-  font-size: 16px;
-  position: absolute;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: end;
   left: 0;
   right: 0;
   bottom: 0;
   border: 1px solid black;
-  text-align: center;
 }
 
 .header {
