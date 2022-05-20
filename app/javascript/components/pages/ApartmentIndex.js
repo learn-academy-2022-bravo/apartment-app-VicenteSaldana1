@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Card, CardTitle, Col } from "reactstrap";
+import { NavLink } from "react-router-dom";
+import { Card, CardTitle, Col, Button } from "reactstrap";
 
 class ApartmentIndex extends Component {
   render() {
@@ -8,7 +9,7 @@ class ApartmentIndex extends Component {
         <h3>Apartment Listings</h3>
         <Col sm="6">
           {this.props.apartments &&
-            this.props.apartments.map((apartment) => {
+            this.props.apartments.map(apartment => {
               return (
                 <Card body key={apartment.id}>
                   <CardTitle>
@@ -16,11 +17,13 @@ class ApartmentIndex extends Component {
                     <h4>{apartment.street}</h4>
                     <h4>City:</h4>
                     <h4>{apartment.city}</h4>
-                    <h4>Manager:</h4>
-                    <h4>{apartment.manager}</h4>
                     <h4>Bedrooms:</h4>
                     <h4>{apartment.bedrooms}</h4>
-                    <img src={apartment.image} width="200px" />
+                    <img src={apartment.image} width="400px" />
+
+                    <Button className="apartmentshow-btn">
+                    <NavLink to={`/apartmentshow/${apartment.id}`}>View Apartment </NavLink>
+                    </Button>
                   </CardTitle>
                 </Card>
               );

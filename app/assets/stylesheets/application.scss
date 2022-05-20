@@ -52,3 +52,19 @@
   justify-content: center;
   text-align: center;
 }
+
+.apartmentshow-btn{
+  background-color: white;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: transform 0.4s;
+}
+.btn:hover {
+  color: black;
+  transform: scale (1.2);
+  border: 2px solid;
+}
